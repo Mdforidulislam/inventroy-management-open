@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Roboto+Slab:wght@100;300;400;500;600;800&display=swap');
+@import "keep-react/src/main.min.css";
+*{
+  font-family: 'Rancho', cursive;
+  font-family: 'Roboto Slab', serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
