@@ -1,6 +1,7 @@
 import autoprefixer from "autoprefixer";
 import { BarChart } from "keep-react";
 import Container from "../../../ShareComponent/Container/Container";
+import { ResponsiveContainer } from "recharts";
 const BarChartData = [
   {
     name: "2",
@@ -81,26 +82,56 @@ const BarChartData = [
 
 const BarCharts = () => {
 
+
   return (
-    <Container>
-      <div className=" shadow-md p-5">
-      <BarChart
-        height={500}
-        width={1000}
-        active
-        activeIndex={5}
-        dataKey="price"
-        chartData={BarChartData}
-        barRadius={[4, 4, 0, 0]}
-        showLegend={true}
-        showBg={true}
-        showXaxis={true}
-        showYaxis={true}
-        showTooltip={true}
-        secondaryDataKey="sell"
-      />
-    </div>
-    </Container>
+      // <div
+      // style={{
+      //   width: '100%',
+      //   maxWidth: '1000px', // Set your desired maximum width
+      //   margin: '0 auto',
+      //   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      //   padding: '16px',
+      // }}>
+      //   <BarChart
+      //     height={500}
+      //     width={'100%'} /* Use percentage for responsiveness */
+      //     active
+      //     activeIndex={5}
+      //     dataKey="price"
+      //     chartData={BarChartData}
+      //     barRadius={[4, 4, 0, 0]}
+      //     showLegend={true}
+      //     showBg={true}
+      //     showXaxis={true}
+      //     showYaxis={true}
+      //     showTooltip={true}
+      //     secondaryDataKey="sell"
+      //   />
+      // </div>
+
+<div style={{maxWidth: '1250px', height: "400px", width: '100%'}}>
+
+<ResponsiveContainer width='100%' height='100%'>
+<BarChart
+          height={500}
+          width={'100%'} /* Use percentage for responsiveness */
+          active
+          activeIndex={5}
+          dataKey="price"
+          chartData={BarChartData}
+          barRadius={[4, 4, 0, 0]}
+          showLegend={true}
+          showBg={true}
+          showXaxis={true}
+          showYaxis={true}
+          showTooltip={true}
+          secondaryDataKey="sell"
+        />
+
+</ResponsiveContainer>
+</div>
+    
+
   );
 };
 

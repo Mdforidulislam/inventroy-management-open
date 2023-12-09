@@ -2,7 +2,7 @@ import axios from "axios";
 
  
  const axiosPublice = axios.create({
-    baseURL:'https://inventory-management-system-server-roan.vercel.app'
+    baseURL:'http://localhost:5000'
  })
  
 

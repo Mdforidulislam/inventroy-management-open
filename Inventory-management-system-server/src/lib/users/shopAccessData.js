@@ -19,21 +19,21 @@ const shopAccessData = async (email, shopId, subEmail) => {
                     { email: email },
                     {
                         $addToSet: {
-                            subShopManager: { role: shopRole, email: subEmail }
+                            subShopManger: { role: shopRole, email: subEmail }
                         }
                     },
-                    { new: true, upsert: true, setDefaultsOnInsert: true }
+                    { new: true, upsert: true}
                 );
 
                 if (updateShopInfo) {
                     console.log(updateShopInfo);
 
                     // Update the subShopManager role in the UsersCollection
-                    await UsersCollection.findOneAndUpdate(
+                  const userUpdateInfo =   await UsersCollection.findOneAndUpdate(
                         { email: subEmail },
                         { $set: { role: shopRole } }
                     );
-
+                        console.log(userUpdateInfo);
                     return { message: 'You are now a shop sub-admin', updateShopInfo };
                 } else {
                     return { message: 'Failed to update shop info' };

@@ -1,5 +1,5 @@
 require("dotenv").config();
- const express = require('express');
+const express = require('express');
 const { applaymiddleware } = require('./src/middlewares/applyMiddleware');
 const connectDB = require('./src/db/ConnectDB');
 const app = express();
