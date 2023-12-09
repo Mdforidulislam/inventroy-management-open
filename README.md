@@ -1,6 +1,6 @@
 #### inventory management system 
 
-### live lin : https://staring-project-891fb.web.app/dashboard/users
+### live link : https://staring-project-891fb.web.app/dashboard/users
 
 
 ####Inventory Management System Application Features
