@@ -1,5 +1,3 @@
-## assignment12_category_0018
-
 #### inventory management system 
 
 ### live lin : https://staring-project-891fb.web.app/dashboard/users
