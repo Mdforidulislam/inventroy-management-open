@@ -24,5 +24,18 @@ Inventory Forecasting and Projection: An IMS should use historical sales data to
 
 Barcoding and Scanning: An IMS should support barcoding and scanning to automate inventory data entry. This can save time and improve accuracy.
 
+## ⚔️ Use Technology
 
-thank for reading doc 
+<p align="center">
+  <a href="">
+    <img src="https://skillicons.dev/icons?i=js,react,tailwind,html,css,firebase" />
+  </a>
+</p>
+<p align="center">
+  <a href="">
+    <img src="https://skillicons.dev/icons?i=express,mongodb,figma" />
+  </a>
+</p>
+
+
+thank you for reading the doc 
